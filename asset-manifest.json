@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/netlfixClone/static/css/main.630a4813.css",
+    "main.js": "/netlfixClone/static/js/main.872b35db.js",
+    "index.html": "/netlfixClone/index.html",
+    "main.630a4813.css.map": "/netlfixClone/static/css/main.630a4813.css.map",
+    "main.872b35db.js.map": "/netlfixClone/static/js/main.872b35db.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.630a4813.css",
+    "static/js/main.872b35db.js"
+  ]
+}
