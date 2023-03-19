@@ -1,0 +1,141 @@
+.navbar {
+  font-size: 18px;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background-color: linear-gradient(
+    to top,
+    transparent 0%,
+    rgba(252, 2, 2, 0.3) 50%
+  );
+
+  &.scrolled {
+    background-color: rgb(32, 30, 30);
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left {
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      padding: 25px;
+      margin-left: 20px;
+
+      .one {
+        width: 13%;
+        display: block;
+      }
+      .two {
+        display: none;
+      }
+      .links {
+        margin-left: 20px;
+
+        span {
+          margin-left: 15px;
+          color: white;
+          cursor: pointer;
+          transition: 0.17s ease;
+          border: none;
+
+          &:hover {
+            border-bottom: 3px solid red;
+          }
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      color: white;
+      cursor: pointer;
+      margin-right: 45px;
+
+      img {
+        width: 25px;
+        border-radius: 50%;
+      }
+
+      .icon {
+        margin: 0 15px;
+      }
+      .profile {
+        .options {
+          display: none;
+          background-color: black;
+          border-radius: 15px;
+        }
+        span {
+          padding: 10px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: red;
+            border: none;
+            border-radius: 15px;
+          }
+        }
+        &:hover {
+          .options {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+
+  /* Media query for small screens */
+  @media (max-width: 768px) {
+    .container {
+      flex-wrap: wrap;
+      background-color: black;
+      margin-left: -30px;
+
+      .left {
+        padding: 0;
+        margin-left: -22px;
+
+        .one {
+          display: none;
+        }
+        .two {
+          width: 30%;
+          display: block;
+          border: none;
+        }
+
+        .links {
+          width: 100%;
+          max-width: fit-content;
+          margin-left: -45px;
+          align-items: center;
+          text-align: center;
+          display: flex;
+          overflow-x: scroll;
+          white-space: nowrap;
+
+          span {
+            width: 100%;
+          }
+        }
+      }
+
+      .right {
+        display: none;
+        margin-right: 0;
+
+        .profile {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

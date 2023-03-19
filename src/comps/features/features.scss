@@ -1,0 +1,166 @@
+.features {
+  height: 90vh;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  .video {
+    width: 100%;
+    height: 100%;
+  }
+  .category {
+    position: absolute;
+    top: 100px;
+    left: 90px;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    select {
+      cursor: pointer;
+      background-color: black;
+      color: white;
+      border: 1px solid white;
+      margin-left: 20px;
+      padding: 5px;
+    }
+  }
+
+  .info {
+    width: 35%;
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    bottom: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    bottom: 20px;
+
+    img {
+      width: 400px;
+      height: 300px;
+      border-radius: 5%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .desc {
+      margin: 20px 0px;
+    }
+
+    .buttons {
+      display: flex;
+
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: 500;
+        margin-right: 10px;
+        cursor: pointer;
+
+        &.play {
+          color: black;
+          background-color: white;
+        }
+        &.more {
+          color: white;
+          background-color: gray;
+        }
+        span {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .features {
+      height: auto;
+    }
+    .video {
+      width: 100%;
+      height: 100%;
+    }
+
+    .category {
+      top: 50px;
+      left: 50px;
+      font-size: 30px;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      left: 0;
+      top: 0;
+      height: 100%;
+
+      h2 {
+        font-size: 36px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+      img {
+        width: 100%;
+        height: 60vh;
+        object-fit: cover;
+      }
+      .desc {
+        position: absolute;
+        top: 55%;
+        padding: 20px;
+        border-radius: 10px;
+        color: white;
+        font-size: 24px;
+        max-width: 90%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .buttons {
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 90%;
+
+        button {
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 18px;
+          font-weight: 500;
+          margin-right: 10px;
+          cursor: pointer;
+
+          &.play {
+            color: black;
+            background-color: white;
+          }
+          &.more {
+            color: white;
+            background-color: gray;
+          }
+          span {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+}

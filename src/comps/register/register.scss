@@ -1,0 +1,603 @@
+$primary-color: #e50914;
+$secondary-color: #141414;
+$background-color: #f8f9fa;
+$font-family: "Netflix Sans", sans-serif;
+
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+
+  .register {
+    outline: none;
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-bottom: 8px solid rgb(49, 49, 49);
+
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 1) 0,
+        transparent 70%,
+        rgba(0, 0, 0, 1)
+      ),
+      url("https://assets.nflxext.com/ffe/siteui/vlv3/a43711df-c428-4f88-8bb3-b2ac5f20608f/dd2786e8-9d8a-4c59-a1fc-0f85cf5efda4/US-en-20230227-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+
+    .top {
+      .wrapper {
+        padding: 20px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+          height: 40px;
+        }
+      }
+    }
+    .container {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+
+      .right {
+        padding: 20px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        select {
+          outline: none;
+          margin-right: 10px;
+          font-size: 16px;
+          padding: 8px 18px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          background-color: inherit;
+          color: white;
+        }
+
+        .loginBtn {
+          background-color: red;
+          display: inline-block;
+          padding: 8px 18px;
+          font-size: 16px;
+          font-weight: 500;
+          text-align: center;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          color: white;
+        }
+      }
+      .info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: -5%;
+
+        h1 {
+          font-size: 68px;
+        }
+        h2 {
+          margin-top: -20px;
+          font-size: 28px;
+          font-weight: 400;
+        }
+        p {
+          font-size: 20px;
+          margin-bottom: 0;
+        }
+        .input {
+          width: 46%;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 20px;
+          height: 70px;
+          border-radius: 5px;
+
+          input {
+            flex: 9;
+            border: none;
+            padding: 0 10px;
+            outline: none;
+
+            &::placeholder {
+              font-size: 18px;
+            }
+          }
+          .registerBtn {
+            flex: 4;
+            height: 100%;
+            background-color: red;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-size: 28px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .cont {
+    color: white;
+    position: relative;
+
+    .part {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      border-bottom: 8px solid rgb(49, 49, 49);
+
+      .inf {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        margin-right: 20px;
+        border-bottom: 4px solid blanchedalmond;
+
+        h1 {
+          font-size: 3.2rem;
+          margin-bottom: 0.5rem;
+        }
+        h3 {
+          font-size: 1.625rem;
+          font-weight: 400;
+        }
+      }
+      img {
+        border: 0;
+        height: auto;
+        max-width: 100%;
+        z-index: 1;
+      }
+
+      .video_one {
+        position: absolute;
+        left: 52%;
+
+        video {
+          width: 100%;
+          max-height: 54%;
+          max-width: 97.2%;
+          margin-bottom: 17px;
+        }
+      }
+      .video_two {
+        position: absolute;
+        right: 52.7%;
+
+        video {
+          width: 100%;
+          max-width: 97%;
+          margin-bottom: 17px;
+        }
+      }
+    }
+    .second {
+      position: relative;
+      width: 100%;
+
+      .img-2 {
+        overflow: clip;
+        max-width: 100%;
+        background: transparent;
+        position: relative;
+        padding: 50px 5%;
+      }
+
+      .footer_img {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        justify-content: space-around;
+        width: 25%;
+        z-index: 1;
+        left: 33%;
+        transform: translateX(-50%);
+        bottom: 15%;
+        height: 16%;
+        border-radius: 10px;
+        border: 1px solid rgb(90, 88, 88);
+
+        .left_img {
+          width: 60px;
+          margin-left: -13px;
+          border-radius: 20%;
+        }
+        .info {
+          margin-bottom: 12px;
+          margin-left: -46px;
+          font-size: 16px;
+
+          h3 {
+            margin-bottom: 0;
+          }
+          span {
+            color: rgb(3, 94, 250);
+          }
+        }
+        .spinner {
+          width: 10%;
+        }
+      }
+    }
+  }
+
+  .third {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+    .right {
+      display: flex;
+      position: relative;
+
+      video {
+        position: absolute;
+        width: 65%;
+        margin-left: 105px;
+        margin-top: 50px;
+        border-radius: 5%;
+      }
+    }
+  }
+  .fourth {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    .img {
+      padding: 50px 3%;
+    }
+    .title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      border-bottom: 4px solid blanchedalmond;
+
+      h1 {
+        font-size: 3.2rem;
+        margin-bottom: 0.5rem;
+      }
+      h3 {
+        font-size: 1.625rem;
+        font-weight: 400;
+      }
+    }
+  }
+  .footer {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+    border-bottom: 8px solid rgb(49, 49, 49);
+    padding-bottom: 100px;
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 0;
+      font-weight: 400;
+    }
+    .input {
+      width: 46%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      height: 70px;
+      border-radius: 5px;
+
+      input {
+        flex: 9;
+        border: none;
+        padding: 0 10px;
+        outline: none;
+
+        &::placeholder {
+          font-size: 18px;
+        }
+      }
+      .registerBtn {
+        flex: 4;
+        height: 100%;
+        background-color: red;
+        border: none;
+        cursor: pointer;
+        color: white;
+        font-size: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .main {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden !important;
+    }
+    .register {
+      width: 100%;
+      position: relative;
+      overflow: hidden !important;
+    }
+    .top {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+
+      .wrapper {
+        position: absolute;
+        left: 0;
+        top: 20px;
+
+        .logo {
+          margin-left: -30px;
+          width: 90%;
+          height: 36px !important;
+          height: inherit;
+        }
+      }
+    }
+    .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+
+      .right {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        width: 20%;
+        height: 3%;
+        margin-top: 10px;
+        position: relative;
+        margin-top: 25px;
+
+        select {
+          height: 30px;
+          background-color: inherit;
+          color: white;
+          position: absolute;
+          left: -10px;
+        }
+        .loginBtn {
+          width: 86px;
+          height: 32px;
+          position: absolute;
+          right: 20px;
+        }
+      }
+      .info {
+        margin-top: -100px !important;
+
+        h1 {
+          font-family: $font-family;
+          font-size: 2.125rem !important;
+        }
+        h2 {
+          font-size: 1.2rem !important;
+          margin-top: 10px !important;
+        }
+        p {
+          width: 85% !important;
+          font-weight: 350;
+          font-size: 1.3rem !important;
+          text-align: center;
+        }
+        .input {
+          width: 100% !important;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+          position: relative;
+
+          input {
+            color: black;
+            background-color: white !important;
+            line-height: 3rem;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            padding-bottom: 0.25rem;
+            padding-top: 1.25rem;
+            width: 74%;
+            margin: 10px auto;
+            background: inherit;
+            border: 0.5px solid white !important;
+            border-radius: 4px;
+          }
+          .registerBtn {
+            width: 38%;
+            margin: 0 auto;
+            border-radius: 4px;
+            margin-top: 10px;
+            padding: 10px 0;
+
+            span {
+              font-size: 18px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+    .cont {
+      width: 100% !important;
+      height: 100% !important;
+      position: relative;
+
+      .part {
+        width: 100% !important;
+        height: 100% !important;
+        display: flex;
+        flex-direction: column;
+        .inf {
+          margin-top: 25px;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          padding-bottom: 10px;
+          border-bottom: none;
+          h1 {
+            font-size: 2rem;
+          }
+          h3 {
+            font-size: 1.08rem;
+          }
+        }
+        img {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+        .video_one {
+          width: 74%;
+          position: absolute;
+          left: 54px;
+          top: 6%;
+          border-radius: none;
+        }
+      }
+      .second {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+        img {
+          order: 2;
+          margin-top: -40px;
+        }
+        .inf {
+          order: 1;
+          margin-top: 40px;
+        }
+        .footer_img {
+          width: 80%;
+          height: 15%;
+          text-align: center;
+          align-items: center;
+          margin-left: 70px;
+          img {
+            width: 76%;
+            display: flex;
+            margin-top: 10px;
+          }
+        }
+      }
+      .third {
+        .right {
+          video {
+            width: 60%;
+            margin-left: 70px;
+          }
+        }
+      }
+    }
+    .fourth {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+
+      .img {
+        order: 2;
+      }
+      .title {
+        order: 1;
+        border-bottom: none;
+
+        h1 {
+          font-size: 2rem;
+          width: 90%;
+          text-align: center;
+        }
+        h3 {
+          font-size: 1.08rem;
+          width: 95%;
+          text-align: center;
+          margin: 0 auto;
+        }
+      }
+    }
+    .footer {
+      margin-top: 10px;
+      h3 {
+        width: 65%;
+      }
+      .input {
+        width: 100% !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        margin-top: 50px;
+
+        input {
+          color: black;
+          background-color: white !important;
+          line-height: 3rem;
+          padding-bottom: 0.25rem;
+          width: 74%;
+          margin: 10px auto;
+          background: inherit;
+          border: 0.5px solid white !important;
+          border-radius: 4px;
+        }
+        .registerBtn {
+          width: 38%;
+          margin: 0 auto;
+          border-radius: 4px;
+          margin-top: 10px;
+          padding: 5px 0;
+
+          span {
+            font-size: 18px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
